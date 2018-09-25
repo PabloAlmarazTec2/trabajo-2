@@ -1,0 +1,73 @@
+
+package practica4poo;
+
+import java.util.Scanner;
+
+/**
+ *
+ *  @author Pablo Aaron ALmaraz Avalos 18550326
+ */
+public class PRACTICA4POO {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //instanciar la clase persona
+        //1.- los objetos son identificadores (variables)
+        int iVal;
+        Persona pPersona1;//declaracion
+        //instaciar = asignar valor(memoria)
+        iVal = 10;
+      
+        pPersona1 = new Persona();//- ek objeto existe
+        //captura nombre 
+        Scanner captu = new Scanner(System.in);
+        System.out.println("introduce nombre");
+        pPersona1.nombre =captu.nextLine();
+        
+        System.out.println(pPersona1.nombre);//aqui si se puede usar
+    
+        Persona pPersona2 = new Persona();
+        System.out.println("introduce nommbre ");
+        
+        pPersona2.nombre =captu.nextLine();
+        System.out.println(pPersona2.nombre);
+        System.out.println("introduce el apellido");
+        pPersona2.apellido = captu.nextLine();
+        System.out.println(pPersona2.apellido);
+       
+        pPersona2.imprimeNombreCompleto();
+        
+       
+        
+        
+        
+        
+    }
+    
+}
+class Persona 
+{
+    //atributos de la clase
+    //Determinan el estado del objeto
+    String nombre;
+    String apellido;
+   int edad;
+   String RFC;
+   String genero;
+   int estadoNaci;
+   String ciudad;
+   String estadoCivil;
+   //comportamiento de la clase
+   //metodos y/o funciones
+   //nivel de acceso - valor de retorno - nombre(argumentos)
+    public void imprimeNombreCompleto()
+    {
+        System.out.println(nombre+ " " + apellido);
+    }
+    
+    
+    
+    
+}
