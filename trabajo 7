@@ -1,0 +1,53 @@
+package eva1_11_funciones;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Pablo
+ */
+public class EVA1_11_funciones {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      saludaUsuario();
+      saludaUsuario();
+      saludaUsuario();
+      saludaUsuario();
+      saludaUsuario();
+      //ejemlpo 2;
+      String sNombre = capturaNombre();
+      imprimirSaludo(sNombre);
+      //simplificado
+      imprimirSaludo(capturaNombre());
+    }
+    
+    public static void saludaUsuario()
+    {
+        
+          Scanner sp = new Scanner(System.in);
+          System.out.println("escriba su salude");
+        String nep = sp.nextLine();
+        System.out.println("hola " + nep);
+        
+    }
+    public static String capturaNombre()
+    {
+     
+          Scanner sp = new Scanner(System.in);
+          System.out.println("escriba su salude ");
+        String nep = sp.nextLine();
+        System.out.println("hola " + nep);
+        return nep;
+    }
+    //funcion para imprimir un saludo
+    public static void imprimirSaludo(String nombre)
+    {
+        System.out.println("hola"+ nombre);
+    
+    }
+}
+//
