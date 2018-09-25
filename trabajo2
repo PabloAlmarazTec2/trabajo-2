@@ -1,0 +1,79 @@
+/*
+ * Práctica del examen dianóstico
+
+ */
+package eva_2_examen_practico;
+
+import java.util.Scanner;
+
+/**
+ *
+ *  @author Pablo Aaron ALmaraz Avalos 18550326
+ */
+public class EVA_2_EXAMEN_PRACTICO {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sCaptu = new Scanner(System.in);//variable para captura del teclado
+        //Scanner es una clase para facilitar una lectura del teclado
+        //System.in es la entrada de perifericos de java
+        
+        
+        //comunicar al usuario las instrucciones
+        System.out.println("introduce un numero entre 1-12:  ");
+        
+        int iCaptuMes = sCaptu.nextInt(); //Lo que el usuario teclee, lo convertimos a
+                                          //entero.
+        switch(iCaptuMes) //verificar el  número
+                {
+                    case 1:
+                    System.out.println("Enero");
+                    break;
+                    case 2:
+                    System.out.println("Febrero");
+                    break;
+                    case 3:
+                    System.out.println("Marzo");
+                    break;
+                    case 4:
+                    System.out.println("Abril");
+                    break;
+                    case 5:
+                    System.out.println("Mayo");
+                    break;
+                    case 6:
+                    System.out.println("Junio");
+                    break;
+                    case 7:
+                    System.out.println("Julio");
+                    break;
+                    case 8:
+                    System.out.println("Agosto");
+                    break;
+                    case 9:
+                    System.out.println("Septiembre");
+                    break;
+                    case 10:
+                    System.out.println("Octubre");
+                    break;
+                    case 11:
+                    System.out.println("Noviembre");
+                    break;
+                    case 12:
+                    System.out.println("Diciembre");
+                    break;
+                    default:
+                    System.out.println("No existe el mes");
+                    
+                    
+
+                    
+                
+                
+                }
+        
+    }
+    
+}
