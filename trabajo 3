@@ -1,0 +1,37 @@
+
+package ejemplo1;
+
+import java.util.Scanner;
+
+/**
+ *
+ *  @author Pablo Aaron ALmaraz Avalos 18550326
+ */
+public class Ejemplo1 {
+
+    
+    public static void main(String[] args) {
+    
+        //crear objetos de clases: instanciación
+        //declarar variables
+        //nombre de la clase nombre del objeto
+     Ejemplo1 pObjetoPpal; //declarando objeto
+     //asignacion de memoria(crear la instancia)
+     pObjetoPpal = new Ejemplo1();//cosntructor
+        System.out.println("El objeto tiene: " + pObjetoPpal);
+    Ejemplo1 pObj2 = new Ejemplo1();//instaciacion
+    
+    Simple pObjSim1 = new Simple();
+   //scanner
+           Scanner sCapu = new Scanner(System.in);
+    }
+    
+}
+// clase sin comportamiento(metodos)
+//ni estado (variables)
+
+class Simple
+{
+
+
+}
